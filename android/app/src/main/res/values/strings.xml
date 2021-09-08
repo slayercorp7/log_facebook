@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <resources>
+
+ <string name="app_name">tercer_parcial</string>
+
+ <string name="facebook_app_id">558624678614835</string>
+
+ <string name="fb_login_protocol_scheme">fb558624678614835</string>
+
+ </resources>
