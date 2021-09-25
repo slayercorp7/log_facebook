@@ -94,19 +94,39 @@ class ScreenPass extends StatelessWidget {
           Container(
               width: 250,
               height: 80,
+              margin: EdgeInsets.only(top: 600, left: 60),
+              alignment: Alignment.topCenter,
+              child: GoogleBtn(
+                  heightC: 40.0,
+                  widhtC: 180.0,
+                  onPressed: () {
+                    userBloc.signIn2();
+                  }, //{
+                  //bloc_user.signIn().then((UserCredential user) =>
+                  //print("usted se a autenticado como:${user.user}"));
+
+                  //},
+                  text: "google"))
+        ],
+      ),
+      Row(
+        children: [
+          Container(
+              width: 250,
+              height: 80,
               margin: EdgeInsets.only(top: 700, left: 60),
               alignment: Alignment.topCenter,
               child: GoogleBtn(
                   heightC: 40.0,
                   widhtC: 180.0,
                   onPressed: () {
-                    userBloc.signIn();
+                    userBloc.signIn3();
                   }, //{
                   //bloc_user.signIn().then((UserCredential user) =>
                   //print("usted se a autenticado como:${user.user}"));
 
                   //},
-                  text: "Get Started"))
+                  text: "facebook"))
         ],
       ),
     ]));
